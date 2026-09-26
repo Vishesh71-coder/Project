@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌤️ Weather App</h1>
+            <p class="subtitle">Check current weather of any city</p>
+
+            <!-- Search Section -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter city name"
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    Get Weather
+                </button>
+            </div>
+
+            <!-- Loading Message -->
+            <p id="loading" class="loading">Loading...</p>
+
+            <!-- Error Message -->
+            <p id="error" class="error"></p>
+
+            <!-- Weather Information -->
+            <div id="weatherResult" class="weather-result">
+
+                <h2 id="cityName">City Name</h2>
+
+                <div class="weather-icon" id="weatherIcon">
+                    🌤️
+                </div>
+
+                <div class="temperature">
+                    <span id="temperature">--</span>°C
+                </div>
+
+                <p id="condition" class="condition">
+                    Weather Condition
+                </p>
+
+                <div class="weather-details">
+
+                    <div class="detail-box">
+                        <span class="detail-icon">💧</span>
+                        <p>Humidity</p>
+                        <strong id="humidity">--%</strong>
+                    </div>
+
+                    <div class="detail-box">
+                        <span class="detail-icon">🌡️</span>
+                        <p>Feels Like</p>
+                        <strong id="feelsLike">--°C</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script2.js"></script>
+
+</body>
+</html>
